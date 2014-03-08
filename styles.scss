@@ -1,0 +1,80 @@
+.datepicker {
+    width: 225px;
+    padding: 2px;
+    .datepicker-header {
+        display: flex;
+        font-size: 16px;
+        cursor: default;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .month-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .month-switch {
+            cursor: pointer;
+        }
+        .title {
+            text-align: center;
+            font-weight: bold;
+            width: 150px;
+        }
+    }
+    .month-view-row {
+        div{
+            display: inline-block;
+            width: 22px;
+            text-align: center;
+            height: 22px;
+            margin: 2px;
+            cursor: default;
+            &:first-child {
+                margin-right: 10px;
+            }
+            &.datecell {
+                line-height: 22px;
+                font-size: 14px;
+                border-radius: 11px;
+                &.nonmember {
+                    opacity: 0.35;
+                }
+            }
+            &.weekday {
+                opacity: 0.5;
+                font-size: 12px;
+            }
+            &.weeknumber {
+                opacity: 0.5;
+                font-size: 12px;
+            }
+
+        }
+    }
+}
+
+.timepicker {
+    input {
+        color: inherit;
+        width: 40px;
+        background-color: inherit;
+        border: none;
+        font-size: inherit;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+//customization of datepicker
+.datepicker {
+    .datecell:hover{
+        background-color: #ccc;
+    }
+    .selected {
+        background-color: #555;
+        color: white;
+    }
+    .today {
+        color: red
+    }
+}
